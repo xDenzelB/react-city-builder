@@ -22,9 +22,8 @@ function App() {
   return (
     <div className="App">
       {/* here, the City component takes in skylineId, waterfrontId, castleId as props. It'll use those ids to render pictures correctly. */}
-      <City skylineId={skylineId} />
-      <City waterfrontId={waterfrontId} />
-      <City castleId={castleId} />
+      <City skylineId={skylineId} waterfrontId={waterfrontId} castleId={castleId} />
+      
       <h1>
         {/* dynamically update the city name here using state */}
         Welcome to beautiful {cityName}!
