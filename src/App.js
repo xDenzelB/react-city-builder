@@ -24,6 +24,7 @@ function App() {
       {/* here, the City component takes in skylineId, waterfrontId, castleId as props. It'll use those ids to render pictures correctly. */}
       <City skylineId={skylineId} />
       <City waterfrontId={waterfrontId} />
+      <City castleId={castleId} />
       <h1>
         {/* dynamically update the city name here using state */}
         Welcome to beautiful {cityName}!
@@ -33,6 +34,7 @@ function App() {
         <section className='dropdowns'>
           <SkylineDropdown setSkylineId={setSkylineId} />
           <WaterfrontDropdown setWaterfrontId={setWaterfrontId} />
+          <CastleDropdown setCastleId={setCastleId} />
           {/* 
           render all three Dropdown components (WaterfrontDropdown, SkylineDropdown, CastleDropdown) here. 
           
