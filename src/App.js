@@ -30,6 +30,7 @@ function App() {
       </h1>
       <div className='bottom'>
         {/* here, the CityNameInput component takes in the setCityName state handler function */}
+        <CityNameInput setCityName={setCityName} />
         <section className='dropdowns'>
           <SkylineDropdown setSkylineId={setSkylineId} />
           <WaterfrontDropdown setWaterfrontId={setWaterfrontId} />
