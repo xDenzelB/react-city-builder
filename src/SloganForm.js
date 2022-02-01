@@ -1,4 +1,4 @@
-import { useState } from 'react/cjs/react.development';
+import { useState } from 'react';
 
 export default function SloganForm({ setSlogans, slogan }) {
   // React forms are a pain! 
